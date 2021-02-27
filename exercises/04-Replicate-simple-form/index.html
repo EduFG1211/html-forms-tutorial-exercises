@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>4Geeks Academy</title>
-</head>
-<body>
-<form>
-<!-- your code here -->
-</form>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+		<style>
+			table,
+			th,
+			td {
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form>
+			<!-- your code here -->
+			<table style="width: 200px">
+				<tr>
+					<th>Name</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td><label for="name">Name</label></td>
+					<td><input type="text" id="name" name="name" /></td>
+				</tr>
+				<tr>
+					<td><label for="gender">Sex</label></td>
+					<td>
+						<input type="radio" id="male" name="gender" value="Male" />
+						<label for="male">Male</label><br />
+						<input type="radio" id="female" name="gender" value="Female" />
+						<label for="female">Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="eyecolor">Eye color</label></td>
+					<td>
+						<input list="eyecolors" name="eyecolor" id="eyecolor" />
+						<datalist id="eyecolors">
+							<option value="green"></option>
+							<option value="blue"></option>
+							<option value="brown"></option>
+							<option value="red"></option>
+							<option value="purple"></option>
+						</datalist>
+					</td>
+				</tr>
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<input type="checkbox" id="pheight" name="pheight" value="Over6ft" />
+						<label for="pheight">Over 6 ft tall</label><br />
+						<input type="checkbox" id="pweight" name="pweight" value="OVer200lb" />
+						<label for="pweight">Over 200 pounds</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="ability">Describe your athetlic ability:</label>
+						<p><input type="text" id="ability" name="ability" style="height: 100px" /></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 100%">
+						<input type="submit" value="Enter my information" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
 </html>
